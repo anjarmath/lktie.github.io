@@ -2,9 +2,9 @@ var nim = ["190312617652","180421621568","I0117011","1715022094","Acc117009","41
 ,"195040101111051","0102-12-8-1823-170","M0219019","180151602192","195050100111008","C1180292","C1180304","195223007","190431100049","190342621216","180121600525","20118008"
 ,"193401088","426779","6032982204919340","5520118042","23010119130122","1805943","26030119130032"];
 
+var isi_nim = document.getElementById("nim").value;
 function mulai(){
 	var patokan = 0;
-	var isi_nim = document.getElementById("nim").value;
 		if (isi_nim == "")
 			{
 				alert("masukkan NIM anda");
@@ -48,4 +48,7 @@ function mulai(){
 				document.getElementById("submit").style.borderRadius = "30px 30px 0px 0px";
 				}
 			}
+}
+function unduh(){
+	window.open("https://anjarmath.github.io/sertif-essai/"+isi_nim+".zip");
 }
