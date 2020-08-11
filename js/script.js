@@ -5,6 +5,7 @@ var nim = ["190312617652","180421621568","I0117011","1715022094","Acc117009","41
 var isi_nim = document.getElementById("nim").value;
 function mulai(){
 	var patokan = 0;
+	var isi_nim = document.getElementById("nim").value;
 		if (isi_nim == "")
 			{
 				alert("masukkan NIM anda");
@@ -50,5 +51,6 @@ function mulai(){
 			}
 }
 function unduh(){
+	var isi_nim = document.getElementById("nim").value;
 	window.open("https://anjarmath.github.io/sertif-essai/"+isi_nim+".zip");
 }
